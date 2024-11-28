@@ -13,11 +13,7 @@ const BlogPost = () => {
       .catch(() => setPostContent(() => () => <p>Post not found!</p>));
   }, [slug]);
 
-  return (
-    <div className="prose max-w-4xl mx-auto p-6">
-      {PostContent ? <PostContent /> : <p>Loading...</p>}
-    </div>
-  );
+  return <div>{PostContent ? <PostContent /> : <p>Loading...</p>}</div>;
 };
 
 export default BlogPost;
