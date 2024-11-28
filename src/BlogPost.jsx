@@ -17,7 +17,7 @@ const BlogPost = () => {
   }, [slug]);
 
   return (
-    <div>
+    <div className="prose max-w-4xl p-6">
       {frontmatter && (
         <header>
           <h1>{frontmatter.title || "Untitled"}</h1>
@@ -25,7 +25,6 @@ const BlogPost = () => {
           {/* Add any additional frontmatter fields here, e.g., author, tags, etc. */}
         </header>
       )}
-
       {PostContent ? <PostContent /> : <p>Loading...</p>}
     </div>
   );
