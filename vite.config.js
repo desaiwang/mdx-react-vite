@@ -14,8 +14,4 @@ export default defineConfig({
       ],
     }),
   ],
-  // Ensure proper module resolution and settings for MDX
-  resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx", ".mdx"],
-  },
 });

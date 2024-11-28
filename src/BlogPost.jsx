@@ -17,11 +17,12 @@ const BlogPost = () => {
   }, [slug]);
 
   return (
-    <div className="prose max-w-4xl mx-auto p-6">
+    <div>
       {frontmatter && (
         <header>
           <h1>{frontmatter.title || "Untitled"}</h1>
           <p>{frontmatter.date}</p>
+          {/* Add any additional frontmatter fields here, e.g., author, tags, etc. */}
         </header>
       )}
 
