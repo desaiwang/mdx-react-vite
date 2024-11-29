@@ -1,8 +1,15 @@
-# My First Post
+---
+title: My First Post
+shortTitle: First Post
+description: Example mdx file with lists, code blocks, and components.
+date: "2024-11-26"
+tags: ["example", "tutorial"]
+image: /axolotl.png
+---
 
-Hello there! This is a paragraph.
+import Counter from "../Counter";
 
-This is another paragraph, with some **bold text**.
+## Intro Section
 
 Here's a list of things:
 
@@ -10,10 +17,23 @@ Here's a list of things:
 2. Banana
 3. Carrot
 
-## A Section with some code
+Here's some code:
 
 ```javascript
 console.log("Hello, world!");
+const customSyntaxHighlighting = "is awesome!";
 ```
 
-Or, maybe you prefer it to be inline: `const greeting = 'Hello, world!';`
+Or, maybe you prefer it to be inline: `const greeting = 'Hello, world!'`
+
+## HTML Component
+
+<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Click me
+</button>
+
+## React Component
+
+<div>
+  <Counter />
+</div>
