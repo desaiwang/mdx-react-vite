@@ -1,18 +1,18 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BlogList from "./BlogList";
 import BlogPost from "./BlogPost";
 function App() {
   return (
     <>
       <div>
-        <HashRouter>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<BlogList />} />
             <Route path="/:slug" element={<BlogPost />} />
             <Route path="/*" element={<BlogList />} />{" "}
             {/* This is a catch-all route */}
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </>
   );

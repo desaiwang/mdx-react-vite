@@ -19,44 +19,46 @@ const BlogPost = () => {
   }, [slug]);
 
   return (
-    <div className="prose max-w-4xl p-6">
-      {frontmatter && (
-        <header>
-          <h1>{frontmatter.title || "Untitled"}</h1>
-          <p>{frontmatter.date}</p>
-          {/* Add any additional frontmatter fields here, e.g., author, tags, etc. */}
-        </header>
-      )}
-      {PostContent ? (
-        <PostContent
-          components={{
-            pre({ children }) {
-              const code = children.props.children.trim();
-              const language =
-                children.props.className?.replace("language-", "") || "text";
+    <div className="flex justify-center">
+      <div className="prose max-w-4xl p-6">
+        {frontmatter && (
+          <header>
+            <h1>{frontmatter.title || "Untitled"}</h1>
+            <p>{frontmatter.date}</p>
+            {/* Add any additional frontmatter fields here, e.g., author, tags, etc. */}
+          </header>
+        )}
+        {PostContent ? (
+          <PostContent
+            components={{
+              pre({ children }) {
+                const code = children.props.children.trim();
+                const language =
+                  children.props.className?.replace("language-", "") || "text";
 
-              return (
-                <SyntaxHighlighter
-                  // className="not-prose"
-                  language={language}
-                  style={dracula}
-                >
-                  {code}
-                </SyntaxHighlighter>
-              );
-            },
-            code: ({ children }) => {
-              return (
-                <code className="not-prose bg-gray-200 rounded px-1 text-sm font-mono">
-                  {children}
-                </code>
-              );
-            },
-          }}
-        />
-      ) : (
-        <p>Loading...</p>
-      )}
+                return (
+                  <SyntaxHighlighter
+                    // className="not-prose"
+                    language={language}
+                    style={dracula}
+                  >
+                    {code}
+                  </SyntaxHighlighter>
+                );
+              },
+              code: ({ children }) => {
+                return (
+                  <code className="not-prose bg-gray-200 rounded px-1 text-sm font-mono">
+                    {children}
+                  </code>
+                );
+              },
+            }}
+          />
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
     </div>
   );
 };
