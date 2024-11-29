@@ -5,5 +5,5 @@ In order to follow along with this tutorial, you need to install some dependenci
 You can find the example blog site here: https://mdx-react-vite.vercel.app/
 
 Here are the demo directory page and blog page.
-![Example Directory Page](BlogList.png)
-![Example Blog Page](mdx-after-typography-syntaxhighlighting.png)
+![Example Directory Page](/BlogList.png)
+![Example Blog Page](/mdx-after-typography-syntaxhighlighting.png)
