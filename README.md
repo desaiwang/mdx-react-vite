@@ -8,10 +8,10 @@ You can find the example blog site here: https://mdx-react-vite.vercel.app/
 
 ### Demo directory page:
 
-  <img src="./public/BlogList.png" alt="Example Directory Page" style="width: 100%;" />
+  <img src="./public/BlogList.png" alt="Example Directory Page" style="width: 80%;" />
 
 ### Demo blog page:
 
-<img src="./public/mdx-after-typography-syntaxhighlighting.png" alt="Example Blog Page" style="width: 100%;" />
+<img src="./public/mdx-after-typography-syntaxhighlighting.png" alt="Example Blog Page" style="width: 80%;" />
 
 </div>
