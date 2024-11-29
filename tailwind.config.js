@@ -9,7 +9,18 @@ export default {
     "./posts/**/*.mdx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              fontWeight: "700",
+              color: "skyblue",
+            },
+          },
+        },
+      },
+    },
     fontFamily: {},
   },
   plugins: [typography],
