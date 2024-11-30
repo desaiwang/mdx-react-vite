@@ -1,7 +1,7 @@
 // src/components/BlogPost.jsx
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const BlogPost = () => {
